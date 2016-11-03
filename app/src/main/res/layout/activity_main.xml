@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,29 +8,30 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.egco428.xmlparser.MainActivity"
+    android:orientation="vertical"
    >
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="209dp"
         android:id="@+id/layout1"
         android:layout_marginTop="20dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Location : "
-            android:id="@+id/locLabel"
+            android:text="Display : "
+            android:id="@+id/disLabel"
             android:textSize="24sp" />
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/locInput"
+            android:id="@+id/displayTxt"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_toEndOf="@+id/locLabel" />
+            android:layout_toEndOf="@+id/disLabel" />
     </LinearLayout>
 
     <LinearLayout
@@ -44,87 +45,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Country :"
-            android:id="@+id/countryLabel"
+            android:text="URL :"
+            android:id="@+id/urlLabel"
             android:textSize="24sp" />
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/countryTxt" />
+            android:id="@+id/urlTxt" />
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layout3"
-        android:layout_below="@+id/layout2"
-        android:layout_marginTop="20dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Temperature :"
-            android:id="@+id/tempLabel"
-            android:textSize="24sp" />
 
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tempTxt" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layout4"
-        android:layout_below="@+id/layout3"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Humidity :"
-            android:id="@+id/humidityLabel"
-            android:textSize="24sp" />
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/humidTxt" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layout5"
-        android:layout_below="@+id/layout4"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pressure :"
-            android:id="@+id/pressureLabel"
-            android:textSize="24sp" />
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/pressTxt" />
-    </LinearLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Weather"
-        android:id="@+id/weatherBtn"
-        android:layout_below="@+id/layout5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp"
-        android:onClick="openWeatherMethod" />
-
-</RelativeLayout>
+</LinearLayout>
